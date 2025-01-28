@@ -1,0 +1,32 @@
+[project]
+name = "say-what-you-mean"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Louis Maddox", email = "louismmx@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.3.0",
+    "bitsandbytes>=0.45.1",
+    "datasets>=3.2.0",
+    "jinja2>=3.1.5",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.0",
+    "optimum>=1.23.3",
+    "outlines[transformers]>=0.1.11",
+    "pydantic>=2.10.6",
+    "sentencepiece>=0.2.0",
+    "torch>=2.5.1",
+    "tqdm>=4.67.1",
+    "transformers>=4.48.1",
+    "vllm>0.6",
+]
+
+[project.scripts]
+say-what-you-mean = "say_what_you_mean:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
